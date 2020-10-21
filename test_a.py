@@ -15,10 +15,10 @@ def end(input):
 
 @allure.feature("场景:A")
 class TestAbb:
-    @allure.step("setup_class")
+    
     def setup_class(self):
         print("setup_class")
-    @allure.step("teardown_class")
+    
     def teardown_class(self):
         print("teardown_class")
 
@@ -29,5 +29,5 @@ class TestAbb:
         print(message)
         after(message)
 
-if __name__ == "__main__":
-    pytest.main("--alluredir=40000report",str(sys.argv[0]))
+#if __name__ == "__main__":
+    #pytest.main("--alluredir=40000report",str(sys.argv[0]))
